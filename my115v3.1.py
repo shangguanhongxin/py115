@@ -2717,9 +2717,12 @@ class FileBrowser:
             #如果你用mpv
             #mpv_command_base = ['am', 'start', '-n', 'is.xyz.mpv/is.xyz.mpv.MPVActivity', '-e', 'filepath',url]
 
-            #如果你用reex
-            #mpv_command_base = ['am', 'start', '-n', 'xyz.re.player.ex/xyz.re.player.ex.MPVActivity',url]
-
+            '''
+            如果你用reex
+            response = input("立即播放？(y/n): ").lower().strip()
+            if response == 'y':
+                mpv_command_base = ['am', 'start', '-n', 'xyz.re.player.ex/xyz.re.player.ex.MainActivity', url]
+            '''
         else:
             mpv_command_base = ['mpv', url,f'--user-agent={self.config.USER_AGENT}']
 
