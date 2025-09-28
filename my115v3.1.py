@@ -27,10 +27,11 @@ import urllib
 
 
 '''
-需要rclone，mpv
-全局变量中token远程路径、快捷列表必须自定义，其他变量可以自定义
-全局变量中infuse需要和已安装的infuse ua一致，请自行检查是否一致,当前为mac最新版本 20250928
-安卓termux下调用的是mpv-ytdl版本，如果用的是其他版本如mpv-android，mpvkt，reex，请自行修改2710行，配置文件中记得加上infuse的ua
+必须要rclone
+没有mpv或infuse播放功能v无法使用
+全局变量中token远程路径、快捷列表必须自定义，其他变量可以根据需要自定义
+全局变量中infuse ua需要和已安装的infuse ua一致，请自行检查是否一致,当前为mac最新版本 20250928
+安卓termux下默认调用的是mpv-ytdl版本，如果用的是其他版本如mpv-android，mpvkt，reex，请自行修改2710行，配置文件中记得加上infuse的ua
 '''
 
 # --- Logging Configuration ---
