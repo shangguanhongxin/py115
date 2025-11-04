@@ -73,7 +73,7 @@ class AppConfig:
         # Rclone token path
         self.RCLONE_TOKEN_FULL_PATH = "790:p/.config/cloud/my115/token.txt"
         self.USER_AGENT = "Infuse/8.2.5381"
-        self.CLIENT_ID = self._get_client_id(2)
+        self.CLIENT_ID = self._get_client_id(4)
         # Timeouts
         self.DEFAULT_CONNECT_TIMEOUT = 100
         self.DEFAULT_READ_TIMEOUT = 100
